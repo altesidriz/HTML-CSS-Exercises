@@ -1,0 +1,39 @@
+button {
+    padding: 5px 10px;
+    border-radius: 15px;
+    border-color: rgb(51, 51, 51);
+    color: rgb(51, 51, 51)
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border-color: rgb(51, 51, 51);
+    background-color: #ccc;
+    color: rgb(51, 51, 51);
+}
+
+button.fill {
+    background-color: rgb(51, 51, 51);
+    color: rgb(251, 251, 251);
+}
+
+button svg {
+    float: left;
+    padding: 0px 10px 0 0px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button.hover:hover {
+    background-color: rgb(0, 102,0);
+    color: rgb(251, 251, 251);
+    outline: none;
+    border:solid 1px rgb(0, 102,0);
+    cursor: pointer;
+}

@@ -1,0 +1,40 @@
+* {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+table {
+    width: 90%;
+}
+
+table thead th{
+    text-align: left;
+}
+
+table,
+th,
+td {
+    border: solid 1px rgb(221, 221, 221);
+    border-collapse: collapse;
+}
+
+th {
+    background-color: rgb(221, 221, 221);
+}
+
+table tr:nth-child(odd){ /*why even rows don't change bg-color on hover when i put td*/
+    background-color: rgb(241, 241, 241); 
+}
+
+tbody tr:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255)
+}
