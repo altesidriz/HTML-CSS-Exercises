@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+/* Variables */
+:root {
+    --white-space: 1.5em;
+}
+
+html {
+    font: 16px/1.4 "Noto Sans", sans-serif;
+}
+
+body,
+table,
+textarea,
+input,
+option,
+label,
+button {
+    font: inherit;
+}
+h1 a[href^="#"], 
+h2 a[href^="#"], 
+h3 a[href^="#"], 
+h4 a[href^="#"], 
+h5 a[href^="#"], 
+h6 a[href^="#"]{
+    opacity: 0.5;
+    text-decoration: none;
+    font-size: 0.4em;
+    vertical-align: baseline;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    text-transform: uppercase;
+    background: rgba(0,0,0,0.1);
+    margin-left: 0.6em;
+}
+
+h1 a[href^="#"]:hover, 
+h2 a[href^="#"]:hover, 
+h3 a[href^="#"]:hover, 
+h4 a[href^="#"]:hover, 
+h5 a[href^="#"]:hover, 
+h6 a[href^="#"]:hover {
+    background-color: #3b4378;
+    color: antiquewhite;
+}
+
+.site {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* .main-nav{
+
+} */
+
+.main-nav ul {
+    padding: 0;
+}
+
+.main-nav > ul > li {
+    display: inline-block;
+}
+
+.main-nav > ul > li li {
+    display: block;
+
+}
+
+.main-nav li{
+     display: inline-block;
+     position: relative;
+}
+
+.main-nav a {
+    display: block;
+    padding: 0.5em 0.2em;
+    text-decoration: none;
+    color: cadetblue;
+    background: #ddd;
+}
+.main-nav li:hover > a,
+.main-nav a:hover{
+    background: #999;
+    color: #fff;
+}
+
+.main-nav > ul ul {
+    display: none;
+    width: 10em;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.main-nav > ul ul ul {
+    top: 0;
+    left: 100%;
+}
+
+.main-nav li:hover > ul {
+    display: block;
+}
+
+.banner {
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    border: 5px solid #fff;
+    border-radius: 0.6em;
+    box-shadow: 0 0 1em 0.5em rgba(0,0,0,0.2);
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.banner img:after {
+    display: block;
+    content:'';
+    position: absolute;
+    inset: 0;
+    background-color: #3b4378;
+    box-shadow: 0 0 1em 0.5em rgb(255, 255, 255);
+}
+
+
+

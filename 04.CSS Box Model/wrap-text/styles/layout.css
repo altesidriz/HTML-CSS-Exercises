@@ -1,0 +1,46 @@
+body{
+    padding: 0 2em;
+}
+
+.site {
+    max-width: 40em;
+    margin: 0 auto;
+}
+
+.site-header {
+    border-bottom: 2px solid #000;
+    position: relative;
+}
+
+.site-footer {
+    border-top: 2px solid #000;
+    padding-top: 1em;
+}
+
+
+.site-header p .overflow {
+    padding: 1.5em;
+    border: 2px solid #000;
+    width: 30em;
+    height: 2em;
+    overflow:scroll;
+    /* white-space: nowrap; */
+    /* text-overflow: ellipsis;*/
+}
+
+.box {
+    width: 10em;
+    height: 20em;
+    border: 2px solid #000;
+    margin-bottom: 2em;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.item {
+    /* width: 1em; */
+    height: 1em;
+    background-color: brown;
+}
