@@ -1,0 +1,29 @@
+/*Use http://figma.com for color picking */
+
+/*--------------------TASK NUMBER ONE TIPS-----------------*/
+
+/* 1.ALWAYS USE THE MAIN RESET CONFIGURATIONS LIKE:*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+/* ALWAYS MAKE A CONTAINER (DIV,SECTION)*/
+/* PAY ATENTION TO A SEMANTIC TAGS LIKE HEADER H1,2,3*/
+
+/* FOR THE IMAGE SQUEZING WAY */
+
+.card img {
+    display: block;
+    width: 100%;     /* This enlarges the image 100% in the .card container*/
+    border-radius: 12px;
+}

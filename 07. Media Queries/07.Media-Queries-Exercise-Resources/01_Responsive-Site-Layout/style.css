@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+body >* {
+    background: #eee;
+    border: 1px solid #999;
+    border-radius: 0.3em;
+}
+
+body :nth-child(1) {order: 1;}
+body :nth-child(2) {order: 3;}
+body :nth-child(3) {order: 2;}
+body :nth-child(4) {order: 4;}
+
+header {
+    padding: 1em;
+}
+
+header, footer {
+    flex-basis: 100%;
+    flex: 1 0 100%;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+aside {
+    flex: 0 0 30%;
+}
+
+footer {
+    padding: 2em;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    display: block;
+}
+

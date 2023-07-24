@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font: normal 14px/1.5 Verdana, Arial, sans-serif;
+}
+
+body, input,  table, form {
+    font: inherit;  /*nasledqva main font'a ot html*/
+}
+
+p {
+    padding-bottom: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    line-height: 1.1; /* unit ne mu trqbva vzima ot html*/
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+/*em is relative with the parent element, rem have relation with html*/
+h1{font-size: 2.8em;}
+h2{font-size: 2.3em;}
+h3{font-size: 1.9em;}
+h4{font-size: 1.5em;}
+h5{font-size: 1.2em;}
+h6{font-size: 1em;}
+
+p {
+    margin: 0;
+    padding-bottom: 1.5rem;
+}
+
+ol, ul, dl {
+    margin: 0 0 1.5 rem 0;
+}
+
+ul, ol {
+    padding: 0;
+    margin-left: 1.5 rem;
+}
