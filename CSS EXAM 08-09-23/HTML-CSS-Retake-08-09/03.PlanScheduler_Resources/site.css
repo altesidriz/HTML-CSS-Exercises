@@ -1,0 +1,315 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Typography */
+
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&&amp;display=swap);
+
+html {
+    font: 14px/1.4 "Inter", sans-serif;
+}
+
+body,
+table,
+textarea,
+input,
+option,
+label,
+button {
+    font: inherit;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    line-height: 1.1;
+}
+
+h1 {font-size: 3.0em;}
+h2 {font-size: 2.2em;}
+h3 {font-size: 1.6em;}
+h4 {font-size: 1.4em;}
+h5 {font-size: 1.2em;}
+h6 {font-size: 1em;}
+
+p {
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    font-size: 0.8em;
+    opacity: 0.7;
+}
+
+
+
+/* Navigation Styling */
+
+.nav-bar {
+    background: #D9D9D9;
+    padding: 1.5em 2.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    align-self: flex-start;
+}
+
+.nav-bar button {
+    background: #fff;
+    border:1px solid #000;
+    border-radius: 0.3em;
+    font-size: 12px;
+}
+
+.nav-bar a {
+    padding: 0.3em 0.8em;
+}
+
+.nav-bar li,
+.nav-bar a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+/* Layout */
+
+body {
+    background: #F5F5F5;
+}
+.site-header {
+    position: relative;
+    height:100vh;
+    align-content: center;
+}
+
+
+.site-banner .text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    max-width: 500px;
+}
+
+.site-banner img {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.site-banner .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+.site-banner .text h1 {
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.site-banner .text p {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.btn-banner {
+    border: none;
+    background: #000;
+    border-radius: 0.3em;
+    padding: 1em;
+}
+
+.btn-banner a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.lists {
+    /* position:relative; */
+    padding: 1em 1.5em;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3em;
+}
+
+.list .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 1em;
+}
+
+.list .text p:first-child {
+    text-transform: uppercase;
+}
+
+.list .text p:not(:first-child) {
+    font-size: 15px;
+    max-width: 80ch;
+}
+
+.list .text a {
+    text-decoration: none;
+    color: #000;
+}
+
+.text .info {
+    opacity: 0.7;
+}
+
+.list-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 0.5em;
+    min-height: 200px;
+}
+
+.list-info span {
+    color: #FF7C4C;
+    padding: 1.2em 0;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1.5;
+}
+
+.main-info {
+    background: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em;
+    gap: 2em;
+}
+
+.main-info .list {
+    padding-left: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: flex-start;
+    gap: 2em;
+}
+
+.media img{
+    display: block;
+    width:400px;
+    height: auto;
+    object-fit: fill;
+}
+
+
+.banner-bottom .card-list {
+    background: #ffffff;
+    margin: 0 2em;;
+    padding:5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    height: 400px;
+}
+
+.banner-bottom .card {
+    width: 20%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1em;
+    text-align: center;
+    line-height: 2.5;
+}
+.banner-bottom .card span {
+    font-weight: bold;
+}
+.banner-bottom .card a {
+    display: block;
+    text-decoration: none;
+}
+
+.card.text {
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.card.text h4 {
+    font-weight: bolder;
+}
+
+.card.text p {
+    font-size: 12px;
+}
+
+.card.one {
+    background: #FF7C4C;
+}
+
+.card.two {
+    background: #000;
+    color: #fff;
+}
+
+.one,
+.two {
+    box-shadow: 10px 10px 34px -14px rgba(0,0,0,0.75);
+    padding: 0.2em 0.5em;
+    border-radius: 0.5em;
+}
+.card.one a {
+    background: #000;
+    padding: 0.2em 0.8em;
+    border-radius: 0.5em;
+    color:#fff;
+}
+
+.card.two a {
+    background: #fff;
+    padding: 0.2em 0.8em;
+    border-radius: 0.5em;
+    color:#000;
+}
+
+.site-footer {
+    background: #D9D9D9;
+    min-height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap:5em;
+}
+
+.site-footer svg{
+    font-size: 15px;
+}
+
+
+
